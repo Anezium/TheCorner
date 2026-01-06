@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TheCorner</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-logo">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+        <span>TheCorner</span>
+      </div>
+    </header>
+
+    <!-- Current Site Section -->
+    <section class="section current-site">
+      <h2 class="section-title">
+        <span class="section-icon">🔔</span>
+        Ce site
+      </h2>
+      <div id="current-site-content">
+        <div class="loading">Chargement...</div>
+      </div>
+    </section>
+
+    <!-- All Partners Section -->
+    <section class="section all-partners">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-icon">📋</span>
+          Tous les partenaires
+        </h2>
+        <button id="open-full-page" class="open-page-btn" title="Ouvrir en pleine page">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <polyline points="15 3 21 3 21 9"/>
+            <line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </button>
+      </div>
+      <div class="search-container">
+        <input type="text" id="search-input" placeholder="Rechercher un partenaire..." autocomplete="off">
+        <span class="search-icon">🔍</span>
+      </div>
+      <div id="partners-list" class="partners-list">
+        <!-- Partners will be loaded here -->
+      </div>
+      <div class="partners-count">
+        <span id="partners-count">0</span> partenaires
+      </div>
+    </section>
+  </div>
+
+  <script src="partners.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

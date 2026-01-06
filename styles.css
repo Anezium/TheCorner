@@ -1,0 +1,240 @@
+/* TheCorner Notification Styles */
+
+/* Reset all styles inside notification to avoid conflicts */
+.thecorner-notification,
+.thecorner-notification * {
+  all: revert !important;
+  box-sizing: border-box !important;
+}
+
+/* Container */
+.thecorner-notification {
+  position: fixed !important;
+  top: 20px !important;
+  right: 20px !important;
+  z-index: 2147483647 !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif !important;
+  font-size: 14px !important;
+  line-height: 1.4 !important;
+  max-width: 340px !important;
+  min-width: 300px !important;
+  width: 340px !important;
+  background: #ffffff !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+  transform: translateX(400px) !important;
+  opacity: 0 !important;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease !important;
+  overflow: hidden !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.thecorner-notification.visible {
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.thecorner-notification.hiding {
+  transform: translateX(400px) !important;
+  opacity: 0 !important;
+}
+
+/* Header */
+.thecorner-notification .thecorner-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 12px 16px !important;
+  margin: 0 !important;
+  background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%) !important;
+  color: white !important;
+}
+
+.thecorner-notification .thecorner-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  color: white !important;
+}
+
+.thecorner-notification .thecorner-logo svg {
+  width: 20px !important;
+  height: 20px !important;
+  fill: white !important;
+  stroke: white !important;
+}
+
+.thecorner-notification .thecorner-close {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border: none !important;
+  color: white !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50% !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 18px !important;
+  line-height: 0 !important;
+  padding: 0 !important;
+  padding-bottom: 2px !important;
+  margin: 0 !important;
+  transition: background 0.2s ease !important;
+}
+
+.thecorner-notification .thecorner-close:hover {
+  background: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Body */
+.thecorner-notification .thecorner-body {
+  padding: 16px !important;
+  margin: 0 !important;
+  background: white !important;
+}
+
+.thecorner-notification .thecorner-store-header {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 0 12px 0 !important;
+  padding: 0 !important;
+}
+
+.thecorner-notification .thecorner-store-logo {
+  width: 28px !important;
+  height: 28px !important;
+  border-radius: 6px !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+  background: #f0f0f0 !important;
+  padding: 2px !important;
+}
+
+.thecorner-notification .thecorner-store {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: #1a1a1a !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Offers list */
+.thecorner-notification .thecorner-offers {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 8px !important;
+  margin: 0 0 16px 0 !important;
+  padding: 0 !important;
+}
+
+.thecorner-notification .thecorner-offer {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 10px 12px !important;
+  margin: 0 !important;
+  background: #f8f9fa !important;
+  border-radius: 8px !important;
+  gap: 12px !important;
+  text-decoration: none !important;
+}
+
+.thecorner-notification .thecorner-discount {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #FF6B35 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Type badges */
+.thecorner-notification .thecorner-type {
+  font-size: 11px !important;
+  font-weight: 600 !important;
+  padding: 4px 8px !important;
+  margin: 0 !important;
+  border-radius: 12px !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.3px !important;
+  white-space: nowrap !important;
+}
+
+.thecorner-notification .thecorner-type.cashback {
+  background: #d4edda !important;
+  color: #155724 !important;
+}
+
+.thecorner-notification .thecorner-type.bon-achat {
+  background: #fff3cd !important;
+  color: #856404 !important;
+}
+
+.thecorner-notification .thecorner-type.remise {
+  background: #cce5ff !important;
+  color: #004085 !important;
+}
+
+/* CTA Button */
+.thecorner-notification .thecorner-cta {
+  display: block !important;
+  width: 100% !important;
+  padding: 12px 16px !important;
+  margin: 0 !important;
+  background: linear-gradient(135deg, #FF6B35 0%, #F7931E 100%) !important;
+  color: white !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  border: none !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  box-sizing: border-box !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+
+.thecorner-notification .thecorner-cta:hover {
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(255, 107, 53, 0.4) !important;
+}
+
+/* Footer */
+.thecorner-notification .thecorner-footer {
+  padding: 12px 16px !important;
+  margin: 0 !important;
+  border-top: 1px solid #eee !important;
+  background: #fafafa !important;
+}
+
+.thecorner-notification .thecorner-hide-option {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  cursor: pointer !important;
+  font-size: 12px !important;
+  color: #666 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.thecorner-notification .thecorner-hide-option input[type="checkbox"] {
+  width: 14px !important;
+  height: 14px !important;
+  cursor: pointer !important;
+  accent-color: #FF6B35 !important;
+  margin: 0 !important;
+}
+
+.thecorner-notification .thecorner-hide-option:hover {
+  color: #333 !important;
+}
+
+.thecorner-notification .thecorner-hide-option span {
+  color: inherit !important;
+  font-size: inherit !important;
+}
