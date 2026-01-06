@@ -1,8 +1,12 @@
-# TheCorner - Extension Chrome
+# <img src="icons/icon48.png" width="32" height="32" align="center"> TheCorner - Extension Chrome
 
 Extension Chrome non-officielle qui détecte automatiquement les sites partenaires **TheCorner** de Boursorama et affiche les réductions disponibles.
 
 ![Preview](https://img.shields.io/badge/Chrome-Extension-green) ![Version](https://img.shields.io/badge/version-1.1.0-blue) ![Partners](https://img.shields.io/badge/partenaires-163-orange)
+
+<p align="center">
+  <img src="screenshot.png" alt="Screenshot" width="350">
+</p>
 
 ## ✨ Fonctionnalités
 
