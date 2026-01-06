@@ -63,6 +63,3 @@ Les partenaires sont stockés dans `partners.js`. Pour mettre à jour :
 
 MIT - Projet à but éducatif uniquement.
 
----
-
-*Cette extension n'est pas officielle et n'est pas endorsée par Boursorama.*
