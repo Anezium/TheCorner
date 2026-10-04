@@ -63,3 +63,6 @@ Les partenaires sont stockés dans `partners.js`. Pour mettre à jour :
 
 MIT - Projet à but éducatif uniquement.
 
+## License
+
+Licensed under the [MIT License](LICENSE).
